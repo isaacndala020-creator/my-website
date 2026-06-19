@@ -1,0 +1,496 @@
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Peter Saviour Riziki | Premium IT & Technology Services</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+<style>
+:root{
+    --primary:#00c896;
+    --dark:#07111f;
+    --dark2:#0f172a;
+    --light:#ffffff;
+    --card:#15233f;
+}
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+    scroll-behavior:smooth;
+}
+
+body{
+    background:var(--dark);
+    color:white;
+}
+
+header{
+    position:fixed;
+    width:100%;
+    top:0;
+    z-index:1000;
+    background:rgba(7,17,31,.95);
+    backdrop-filter:blur(10px);
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:18px 8%;
+}
+
+.logo{
+    font-size:28px;
+    font-weight:800;
+    color:var(--primary);
+}
+
+nav a{
+    color:white;
+    text-decoration:none;
+    margin-left:20px;
+    transition:.3s;
+}
+
+nav a:hover{
+    color:var(--primary);
+}
+
+.hero{
+    min-height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+    padding:120px 8% 80px;
+    background:linear-gradient(135deg,#07111f,#10243f);
+}
+
+.profile{
+    width:220px;
+    height:220px;
+    border-radius:50%;
+    border:5px solid var(--primary);
+    object-fit:cover;
+    margin-bottom:25px;
+}
+
+.hero h1{
+    font-size:3.5rem;
+}
+
+.hero span{
+    color:var(--primary);
+}
+
+.hero p{
+    max-width:850px;
+    margin:20px auto;
+    color:#d0d7e2;
+}
+
+.btn{
+    display:inline-block;
+    margin:10px;
+    padding:15px 35px;
+    border-radius:35px;
+    text-decoration:none;
+    font-weight:600;
+}
+
+.btn-primary{
+    background:var(--primary);
+    color:white;
+}
+
+.btn-outline{
+    border:2px solid var(--primary);
+    color:var(--primary);
+}
+
+section{
+    padding:90px 8%;
+}
+
+.section-title{
+    text-align:center;
+    font-size:2.5rem;
+    margin-bottom:50px;
+    color:var(--primary);
+}
+
+.cards{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+    gap:25px;
+}
+
+.card{
+    background:var(--card);
+    padding:25px;
+    border-radius:15px;
+    transition:.4s;
+}
+
+.card:hover{
+    transform:translateY(-10px);
+}
+
+.card h3{
+    color:var(--primary);
+    margin-bottom:15px;
+}
+
+.about{
+    max-width:1000px;
+    margin:auto;
+    text-align:center;
+    font-size:1.05rem;
+}
+
+.skills{
+    margin-top:40px;
+}
+
+.skill{
+    margin-bottom:20px;
+}
+
+.skill p{
+    margin-bottom:8px;
+}
+
+.bar{
+    background:#24344f;
+    border-radius:20px;
+    overflow:hidden;
+}
+
+.fill{
+    background:var(--primary);
+    height:12px;
+}
+
+.projects{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+    gap:25px;
+}
+
+.project{
+    background:var(--card);
+    border-radius:15px;
+    overflow:hidden;
+}
+
+.project img{
+    width:100%;
+    height:220px;
+    object-fit:cover;
+}
+
+.project-content{
+    padding:20px;
+}
+
+.testimonials{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+    gap:25px;
+}
+
+.testimonial{
+    background:var(--card);
+    padding:25px;
+    border-radius:15px;
+}
+
+.contact{
+    text-align:center;
+}
+
+.contact-box{
+    background:var(--card);
+    max-width:800px;
+    margin:auto;
+    padding:30px;
+    border-radius:15px;
+}
+
+.contact-box p{
+    margin:10px 0;
+}
+
+footer{
+    text-align:center;
+    padding:30px;
+    background:#030912;
+}
+
+.whatsapp{
+    position:fixed;
+    right:20px;
+    bottom:20px;
+    background:#25D366;
+    color:white;
+    text-decoration:none;
+    padding:15px 22px;
+    border-radius:50px;
+    font-weight:bold;
+}
+
+@media(max-width:768px){
+    nav{
+        display:none;
+    }
+
+    .hero h1{
+        font-size:2.2rem;
+    }
+
+    .profile{
+        width:160px;
+        height:160px;
+    }
+}
+</style>
+</head>
+<body>
+
+<header>
+    <div class="logo">PSR TECH</div>
+
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#services">Services</a>
+        <a href="#portfolio">Portfolio</a>
+        <a href="#contact">Contact</a>
+    </nav>
+</header>
+
+<section class="hero" id="home">
+
+<div>
+
+<img
+class="profile"
+src="https://via.placeholder.com/400x400.png?text=Peter+Saviour+Riziki"
+alt="Peter Saviour Riziki">
+
+<h1>Peter Saviour <span>Riziki</span></h1>
+
+<h2>IT Specialist | Web Designer | Software Developer</h2>
+
+<p>
+Providing professional web design, networking solutions,
+software development, data entry and analysis,
+database management, Microsoft Excel services,
+and computer repair & maintenance in Busia, Kenya.
+</p>
+
+<a href="#contact" class="btn btn-primary">Hire Me</a>
+
+<a href="#" class="btn btn-outline">Download CV</a>
+
+</div>
+
+</section>
+
+<section id="about">
+
+<h2 class="section-title">About Me</h2>
+
+<div class="about">
+
+<p>
+I am Peter Saviour Riziki, a passionate technology professional
+based in Busia, Kenya. I help businesses, institutions,
+and individuals leverage modern technology through
+software solutions, networking services, database management,
+web development, and IT support.
+</p>
+
+<div class="skills">
+
+<div class="skill">
+<p>Web Design</p>
+<div class="bar"><div class="fill" style="width:95%"></div></div>
+</div>
+
+<div class="skill">
+<p>Software Development</p>
+<div class="bar"><div class="fill" style="width:90%"></div></div>
+</div>
+
+<div class="skill">
+<p>Networking</p>
+<div class="bar"><div class="fill" style="width:88%"></div></div>
+</div>
+
+<div class="skill">
+<p>Database Management</p>
+<div class="bar"><div class="fill" style="width:92%"></div></div>
+</div>
+
+<div class="skill">
+<p>Microsoft Excel</p>
+<div class="bar"><div class="fill" style="width:95%"></div></div>
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<section id="services">
+
+<h2 class="section-title">Professional Services</h2>
+
+<div class="cards">
+
+<div class="card">
+<h3>Web Design</h3>
+<p>Modern, responsive, and SEO-friendly websites.</p>
+</div>
+
+<div class="card">
+<h3>Networking</h3>
+<p>Network setup, maintenance, troubleshooting and security.</p>
+</div>
+
+<div class="card">
+<h3>Software Development</h3>
+<p>Custom software systems tailored to your needs.</p>
+</div>
+
+<div class="card">
+<h3>Data Entry & Analysis</h3>
+<p>Professional data processing and reporting.</p>
+</div>
+
+<div class="card">
+<h3>Database Management</h3>
+<p>Database creation, entry, backup and maintenance.</p>
+</div>
+
+<div class="card">
+<h3>Computer Repair</h3>
+<p>Hardware diagnostics, repair and maintenance services.</p>
+</div>
+
+</div>
+
+</section>
+
+<section id="portfolio">
+
+<h2 class="section-title">Portfolio</h2>
+
+<div class="projects">
+
+<div class="project">
+<img src="https://via.placeholder.com/600x400?text=Business+Website">
+<div class="project-content">
+<h3>Business Website</h3>
+<p>Professional corporate website project.</p>
+</div>
+</div>
+
+<div class="project">
+<img src="https://via.placeholder.com/600x400?text=Inventory+System">
+<div class="project-content">
+<h3>Inventory Management System</h3>
+<p>Custom business inventory solution.</p>
+</div>
+</div>
+
+<div class="project">
+<img src="https://via.placeholder.com/600x400?text=Excel+Dashboard">
+<div class="project-content">
+<h3>Excel Analytics Dashboard</h3>
+<p>Advanced reporting and data visualization.</p>
+</div>
+</div>
+
+</div>
+
+</section>
+
+<section>
+
+<h2 class="section-title">Testimonials</h2>
+
+<div class="testimonials">
+
+<div class="testimonial">
+<p>"Professional service and excellent communication."</p>
+<strong>— Client</strong>
+</div>
+
+<div class="testimonial">
+<p>"Delivered a quality website beyond expectations."</p>
+<strong>— Business Owner</strong>
+</div>
+
+<div class="testimonial">
+<p>"Reliable IT support and networking expertise."</p>
+<strong>— Organization</strong>
+</div>
+
+</div>
+
+</section>
+
+<section id="contact">
+
+<h2 class="section-title">Contact Information</h2>
+
+<div class="contact">
+
+<div class="contact-box">
+
+<p><strong>Name:</strong> Peter Saviour Riziki</p>
+<p><strong>Location:</strong> Busia, Kenya</p>
+<p><strong>Phone:</strong> 0714013816</p>
+<p><strong>Email:</strong> mikeriziki398@gmail.com</p>
+
+<br>
+
+<a class="btn btn-primary"
+href="mailto:mikeriziki398@gmail.com">
+Send Email
+</a>
+
+<a class="btn btn-outline"
+href="https://facebook.com/"
+target="_blank">
+Facebook (Mike Edson Riziki)
+</a>
+
+</div>
+
+</div>
+
+</section>
+
+<footer>
+<p>© 2026 Peter Saviour Riziki Technology Services. All Rights Reserved.</p>
+</footer>
+
+<a
+class="whatsapp"
+href="https://wa.me/254714013816"
+target="_blank">
+WhatsApp Me
+</a>
+
+</body>
+</html>
+```
